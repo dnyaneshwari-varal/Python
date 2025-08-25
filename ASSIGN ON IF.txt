@@ -1,0 +1,40 @@
+1-Write a program to input two numbers and print their sum, difference, product, and division.
+
+2-Write a program to take the radius of a circle as input and print its area.
+(Hint: Area = 3.14 * r * r)
+3-Write a program to input three numbers and print the largest number.
+
+4=Write a program to create a simple calculator that performs addition, subtraction, multiplication, and division based on user choice.
+(Hint: Take two numbers as input and then ask the user to enter +, -, *, or /)
+5=Write a program to input two numbers and check which one is greater using comparison operators.
+
+6-Write a program to input a number and print whether it is even or odd using modulus operator %.
+
+7-Write a program to input a number and find its square and cube using exponent operator **.
+
+8-Write a program to input a number and check if it is divisible by both 3 and 5.
+
+9=Write a program to input a person’s age and decide if they are:
+
+Child (age < 13)
+
+Teenager (13–19)
+
+Adult (20–59)
+
+Senior (60 and above)
+
+10-Write a program to input marks of a student and print the Grade:
+
+90 and above → A
+
+80-89 → B
+
+70-79 → C
+
+60-69 → D
+
+Below 60 → Fail
+
+11-Write a program to input a year and check whether it is a leap year or not.
+(Hint: A year is leap if divisible by 400 OR (divisible by 4 but not by 100))

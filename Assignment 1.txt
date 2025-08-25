@@ -1,0 +1,59 @@
+Assignment 1
+
+'''Assignment on print
+student id
+student name
+cource
+cource fees
+start date
+'''
+studId=120
+studName="Dnyaneshwari"
+cource="java fullstack"
+start_date=1
+res="student id is %d student name is %s student cource is %s Start date is %d"%(studId,studName,cource,start_date)
+print(res)
+
+print("student id is "+str(studId)+ "Student name is "+studName +"cource name is "+cource +"Start date is "+str(start_date))
+
+print("student id is {} Student name is {} cource name is {} Start date is {}".format(studId,studName,cource,start_date))
+
+print("student id is {0} Student name is {1} cource name is {2} Start date is {3} again Student name is {0} ".format(studId,studName,cource,start_date))
+
+
+
+
+
+
+Assignment 2
+Take input from user
+
+a=input("enter your name ")
+b=int(input("enter your age "))
+c=float(input("enter balance in ur acc "))
+d=bool(input("information is: "))
+
+print(a)
+print(b)
+print(c)
+print(d)
+
+
+
+
+
+#Assignment 3
+'''Assignment on input take input from user
+student id
+student name
+cource
+cource fees
+start date
+'''
+
+StudId=int(input("Enter student Id "))
+StudName=input("Enter student Name ")
+courceName=input("Enter student cource name ")
+Fees=int(input("Enter student cource fees "))
+StartDate=int(input("Enter start date "))
+print("Student id is {} Name of student is {} Cource name is {} Fees of cource is {} Start date is{} ".format(StudId,StudName,courceName,Fees,StartDate))
