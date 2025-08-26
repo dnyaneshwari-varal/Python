@@ -1,3 +1,4 @@
+
 #code1
 print("code1")
 datalst=["Seed","Infotech","Pune"]
@@ -83,6 +84,62 @@ for i in range(1,6):
   else:
       cube1=num*num*num
       print(num, " is odd so cube of", num," is: ",sqr)
+
+
+
+#Assignment6
+#print series of cube of number 
+n=int(input("Enter n: "))
+for i in range(1,n+1):
+    
+    series=i**3
+    print(series,end=' ')
+
+
+
+
+#Assignment7
+# output 1 4 27 16 125
+n=int(input("Enter n: "))
+for i in range(1,n+1):
+     if(i%2==0):
+         print(i**2,end=" ")
+     else:
+         print(i**3,end=" ")
+
+
+#Assignment7
+#fibonacci series 0 1 1 2 3
+
+first=0
+second=1
+print(first,second,end=' ')
+for i in range(1,6):
+    fib=first+second
+    first=second
+    second=fib
+    print(fib,end=' ')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
