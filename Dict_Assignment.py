@@ -183,19 +183,19 @@ dict2={}
 items=int(input("How many items for dict: "))
 for i in range(items):
     
-    fruit_name=input("Enter Fruit name: ")  #key
-    fruit_District=input("Enter country: ") #value
+    num1=int(input("Enter num1: "))  #key
+    num2=int(input("Enter num2: ")) #value
     
-    dict1[fruit_name]=fruit_District
+    dict1[num1]=num2
     
 print(dict1)
 
 items1=int(input("How many items for dict: "))
 for j in range(items1):
     
-    country_name=input("Enter country: ")
-    capital_name=input("Enter Fruit name: ")
-    dict2[country_name]=capital_name
+    num1=int(input("Enter num1: "))
+    num2=int(input("Enter num2: "))
+    dict2[num1]=num2
     
 print(dict2)
 
@@ -213,7 +213,7 @@ print("dict1 is: ",dict1)
 print("dict2 is: ",dict2)
 print("merge Dictionary: ",merge)
 
-'''
+
 #7 Write a program to print all unique values from a dictionary that may have duplicate values.
 
 
@@ -225,22 +225,53 @@ for i in d1:
         result[i]=d1[i]
 print(result)
 
+'''
 
 #8
 total_stud=int(input("Enter num of students: "))
 students={}
-mark_dict={}
+
 subject=int(input("Enter total subjects: "))
 for i in range(total_stud):
   name=input("Enter Name: ")
+  mark_dict={}
   for j in range(subject): 
     sub=input("Enter subject: ")
     marks=int(input("Enter marks: "))
     mark_dict[sub]=marks
-    students[i]={name:mark_dict}
+  students[i]={name:mark_dict}
 
 for i in students:
     print(students[i])
+
+for j in students:
+    total=0
+    count=0
+    for name,marks in students[j].items():
+        for mark in marks.values():
+           total=total+mark
+           count=count+1
+        avg=total/count
+    print("Average marks of student {} is {:.2f} ".format(name,avg))
+first_stud=""
+for n in students:
+    first_stud=n
+    break
+for sub in students[first_stud]:
+    max=0
+    topper=""
+    for name in students:
+        marks=students[name][sub]
+        if (marks > max):
+          max=marks
+          topper=name
+    print("Topper name: ",sub,"is ",topper,"with",max,"marks")
+        
+     
+
+    
+
+
         
         
 
