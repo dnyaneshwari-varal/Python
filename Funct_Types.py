@@ -70,8 +70,8 @@ fun_Arb("hello","Students")
 
 def ArbKey(**info):
     print(type(info))
-    for key in info.items():
-        print(key)
+    for i in info.items():
+        print(i)
 
 #ArbKey(1="DS",2="java")  we cant give values like this
 
