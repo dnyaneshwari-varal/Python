@@ -6,6 +6,7 @@ while True:
     print("3.search specific employee with help of ID: ")
     print("4.Update Employee Data: ")
     print("5.Delete Employee Data: ")
+    print("6.Exit")
 
     choice=int(input("Enter choice: "))
     if choice==1:
@@ -23,6 +24,7 @@ while True:
         em.delete_emp(emp_id)
     elif choice==6:
         print("Exit")
+        break
     else:
         print("Ënter valid choice!!")
     

@@ -8,7 +8,7 @@ def store_data():
         dep=input("Enter Department name: ")
         sal=int(input("Enter Salary: "))
 
-        emp[ID]={"Name":name,"Department":dep,"Salary":sal}
+        emp[ID]={"empId":ID,"Name":name,"Department":dep,"Salary":sal}
         ch=int(input("want to add anothe emp data? if yes=1 no=0"))
         if ch ==0:
             break
@@ -39,6 +39,6 @@ def delete_emp(emp_id):
    
     else:
         print("user not found!!")
-        
-        
+
+
     
