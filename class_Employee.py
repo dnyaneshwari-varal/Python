@@ -1,10 +1,14 @@
 class Employee:
+    emp_sal=100
     def cal_sal(self,sal):
-        TA=sal*0.05
+        
+        self.emp_sal=sal
+        #print(self.emp_sal)
+        TA=self.emp_sal*0.05
         print(TA)
-        DA=sal*0.05
-        total_sal=TA+DA+sal
-        print(total_sal)
+        DA=self.emp_sal*0.05
+        total_sal=TA+DA+self.emp_sal
+        #print(total_sal)
         return total_sal
 
 

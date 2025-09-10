@@ -38,3 +38,4 @@ Below 60 → Fail
 
 11-Write a program to input a year and check whether it is a leap year or not.
 (Hint: A year is leap if divisible by 400 OR (divisible by 4 but not by 100))
+
