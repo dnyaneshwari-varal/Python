@@ -1,0 +1,11 @@
+class Product:
+    def __init__(self,name,price):
+        self.name=name
+        self.price=price
+
+    def __str__(self):
+        return f"Product: {self.name}, Price: {self.price:.2f} INR"
+
+product=Product("Butter",600)
+print(product)
+print(str(product))
