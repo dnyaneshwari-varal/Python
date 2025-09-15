@@ -1,0 +1,16 @@
+Writing in file
+Python is versatile language!
+This is file opend in w+ mode.
+writing done in file!!
+Abtony
+224 Baker Street
+London
+Abtony
+224 Baker Street
+London
+Abtony
+224 Baker Street
+London
+Abtony
+224 Baker Street
+London
