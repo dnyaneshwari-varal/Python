@@ -1,3 +1,4 @@
+#adding data in database using user input
 import mysqlx
 try:
     connection=mysqlx.get_session({
@@ -9,7 +10,19 @@ try:
 
     schema=connection.get_schema("library_db")
     table=schema.get_table("book")
-   
+    #taking input
+    #adding data in database
+    while True:
+        id=int(input("Enter ID of user: "))
+        name=input("Enter name: ")
+        price=int(input("Enter price: "))
+        table.insert(["b_id","b_name","b_price"]).values(id,name,price).execute()
+        choice=int(input("If you want to add data press 1 else press 0: "))
+        if choice==0:
+            break
+
+
+    #table.insert(["b_id","b_name","b_price"]).values(6,"tableu",200).execute()
     qry="SELECT *FROM library_db.book"
     result=connection.sql(qry).execute()
     print(type(result))
